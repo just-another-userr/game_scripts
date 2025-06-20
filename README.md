@@ -3,7 +3,7 @@
 This script will perform a name swap for the 7D2D version 1.4 mod folders in 2 locations;
 	- the 'Base Game Folder', usually found in '<Some Letter>\\SteamLibrary\steamapps\common\7 Days To Die\'
 	and 
-	- the 'Appdata Location' that The Fun Pimps recommend most mods be placed in, usually found in C:\Users\\<username>\AppData\Roaming\7DaysToDie
+	- the 'Appdata Location' that The Fun Pimps recommend most mods be placed in, usually found in C:\Users\\$env:username\AppData\Roaming\7DaysToDie
 	
 We have vanilla mods in both of the above locations so this script handles them both even though the Darkness Falls mods are all in the 'Base Game folder'
 	
