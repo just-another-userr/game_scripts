@@ -1,9 +1,9 @@
 7dtd Mod swap script instructions: 
 
 This script will perform a name swap for the 7D2D version 1.4 mod folders in 2 locations;
-	- the 'Base Game Folder', usually found in '<Some Letter>:\SteamLibrary\steamapps\common\7 Days To Die\'
+	- the 'Base Game Folder', usually found in '<Some Letter>\\SteamLibrary\steamapps\common\7 Days To Die\'
 	and 
-	- the 'Appdata Location' that The Fun Pimps recommend most mods be placed in, usually found in C:\Users\<username>\AppData\Roaming\7DaysToDie
+	- the 'Appdata Location' that The Fun Pimps recommend most mods be placed in, usually found in C:\Users\\<username>\AppData\Roaming\7DaysToDie
 	
 We have vanilla mods in both of the above locations so this script handles them both even though the Darkness Falls mods are all in the 'Base Game folder'
 	
@@ -17,9 +17,9 @@ We have vanilla mods in both of the above locations so this script handles them 
 
 3) Close all File explorer or Shell windows to the Appdata Location or Base Game Folders
 
-4) Open Powershell and run the following commands:
+4) Open Powershell as administrator and run the following commands. Note that you may need to confirm prompts still to run the script
 
-	- Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+	- Set-ExecutionPolicy -ExecutionPolicy Unrestricted 
 	- cd C:\users\\$env:username\documents
 	- .\tmg_7dtd_mod_swap.ps1
 
@@ -29,3 +29,5 @@ We have vanilla mods in both of the above locations so this script handles them 
 # Troubleshooting: 
 
 If the script isn't working or is throwing an error, make sure there are no processes or windows accessing the Base Game Folder and rerun
+You can try to run the following command
+	unlock-file -path C:\users\\$env:username\documents
